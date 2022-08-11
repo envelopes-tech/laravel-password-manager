@@ -23,6 +23,14 @@ PASSWORDS_KEY="Your 16 Character Long String Here"
 PASSWORDS_TABLE="optional_password_table_name"
 ```
 
+If you would like to generate a key for the .env file, you can use the following Artisan command:
+
+```bash
+php artisan passwords:generate-key
+```
+
+You can then copy the generated key to your .env file.
+
 Then, publish the database migrations:
 
 ```bash
@@ -95,6 +103,10 @@ public function show(int $id, PasswordManager $passwords)
     $decrypted = $passwords->decrypt($password->dynamic, $password->password);
 }
 ```
+
+## Caveats
+
+This package doesn't handle authentication or middlewares involved in protecting the encryption or decryption of passwords - you will need to handle this yourself.
 
 ## Licence
 

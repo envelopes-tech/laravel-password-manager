@@ -8,7 +8,6 @@ use Benjafield\LaravelPasswordManager\PasswordManager;
 use Benjafield\LaravelPasswordManager\Traits\CanMakePassword;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Support\Facades\Artisan;
 use Tests\TestCase;
 
 class AlternativePassword extends Model implements MakesPassword {

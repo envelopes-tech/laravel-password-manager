@@ -10,10 +10,20 @@ class Password extends Model implements MakesPassword
 {
     use CanMakePassword;
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var string[]
+     */
     protected $fillable = [
         'name', 'dynamic', 'password',
     ];
 
+    /**
+     * Create a new Eloquent instance and set the database table.
+     *
+     * @param array $attributes
+     */
     public function __construct(array $attributes = [])
     {
         parent::__construct($attributes);
