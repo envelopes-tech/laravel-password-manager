@@ -1,10 +1,20 @@
 {
     "name": "cbenjafield/laravel-password-manager",
+    "type": "library",
     "description": "A simple password manager package for Laravel.",
+    "keywords": [
+        "cbenjafield",
+        "laravel-password-manager",
+        "password manager"
+    ],
+    "homepage": "https://github.com/cbenjafield/laravel-password-manager",
+    "licence": "MIT",
     "authors": [
         {
             "name": "Charlie Benjafield",
-            "email": "me@cbenjafield.com"
+            "email": "me@cbenjafield.com",
+            "homepage": "https://cbenjafield.com",
+            "role": "Web Developer"
         }
     ],
     "require": {
