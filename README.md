@@ -1,3 +1,5 @@
+![Laravel Password Manager](laravel-password-manager.jpg)
+
 # Laravel Password Manager
 
 A really simple Laravel package to encrypt and decrypt passwords in storage.
