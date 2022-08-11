@@ -8,6 +8,7 @@ use Benjafield\LaravelPasswordManager\PasswordManager;
 use Benjafield\LaravelPasswordManager\Traits\CanMakePassword;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Artisan;
 use Tests\TestCase;
 
 class AlternativePassword extends Model implements MakesPassword {
@@ -116,5 +117,12 @@ class PasswordTest extends TestCase
         $password = $manager->encrypt('Alternative Password', 'secret');
 
         $this->assertInstanceOf(AlternativePassword::class, $password);
+    }
+
+    /** @test */
+    public function it_can_generate_a_new_key()
+    {
+        $command = $this->artisan('passwords:generate-key');
+        $command->expectsOutput("Key generated successfully:");
     }
 }

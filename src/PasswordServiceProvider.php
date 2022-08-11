@@ -2,6 +2,7 @@
 
 namespace Benjafield\LaravelPasswordManager;
 
+use Benjafield\LaravelPasswordManager\Commands\GeneratePasswordKeyCommand;
 use Illuminate\Support\ServiceProvider;
 
 class PasswordServiceProvider extends ServiceProvider
@@ -25,6 +26,10 @@ class PasswordServiceProvider extends ServiceProvider
                     __DIR__ . '/../database/migrations/create_passwords_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_passwords_table.php'),
                 ], 'migrations');
             }
+
+            $this->commands([
+                GeneratePasswordKeyCommand::class,
+            ]);
         }
     }
 }
