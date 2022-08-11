@@ -8,7 +8,7 @@
         "password manager"
     ],
     "homepage": "https://github.com/cbenjafield/laravel-password-manager",
-    "licence": "MIT",
+    "license": "MIT",
     "authors": [
         {
             "name": "Charlie Benjafield",
