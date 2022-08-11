@@ -2,6 +2,10 @@
 
 # Laravel Password Manager
 
+![Packagist Version](https://img.shields.io/packagist/v/cbenjafield/laravel-password-manager)
+![Packagist License](https://img.shields.io/packagist/l/cbenjafield/laravel-password-manager)
+[![Build Status](https://scrutinizer-ci.com/g/cbenjafield/laravel-password-manager/badges/build.png?b=main)](https://scrutinizer-ci.com/g/cbenjafield/laravel-password-manager/build-status/main)
+
 A really simple Laravel package to encrypt and decrypt passwords in storage.
 
 ## Installation
@@ -112,4 +116,4 @@ This package doesn't handle authentication or middlewares involved in protecting
 
 ## Licence
 
-The MIT Licence (MIT). Please refer to [Licence File](LICENCE.md) for more information.
+The MIT Licence (MIT). Please refer to [Licence File](LICENSE.md) for more information.
